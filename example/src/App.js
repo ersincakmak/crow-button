@@ -1,10 +1,18 @@
 import React from 'react'
 
-import { ExampleComponent } from 'crow-button'
+import { ExampleComponent, Button } from 'crow-button'
 import 'crow-button/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return (
+    <>
+      <Button type='primary'>My Button</Button>
+      <Button type='text'>My Button</Button>
+      <Button type='dashed'>My Button</Button>
+      <Button type='link'>My Button</Button>
+      <Button>My Button</Button>
+    </>
+  )
 }
 
 export default App

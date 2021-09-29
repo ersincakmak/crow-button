@@ -15,13 +15,11 @@ npm install --save crow-button
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'crow-button'
-import 'crow-button/dist/index.css'
+import { Button } from 'crow-button'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const Example = () => {
+  // type can be primary, text, link, dashed and can be undefined
+  return <Button type='primary'>My Button</Button>
 }
 ```
 
